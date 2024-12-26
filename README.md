@@ -13,6 +13,9 @@ Welcome to the VHF Panel project repository! This is my first venture into the w
 
 - **Side mounted digital encoder** - used as a trim
 
+## Materials Used
+[https://www.amazon.de/-/en/dp/B09F9VJBZX?_encoding=UTF8&psc=1](https://www.amazon.de/-/en/dp/B09F9VJBZX?_encoding=UTF8&psc=1)
+
 ## 3D Printed Housing
 I designed the enclosure to be easily 3D printen on my Ender 3. The STL's folder contains three files - the main enclosure, top panel and an optional trim rotary encoder knob.
 
@@ -21,6 +24,7 @@ I designed the enclosure to be easily 3D printen on my Ender 3. The STL's folder
   <img src="images/Top panel.png" alt="Description" width="400" height="400">
   <img src="images/Top panel.png" alt="Description" width="400" height="400">
 </div>
+
 
 
 
