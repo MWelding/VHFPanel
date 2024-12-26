@@ -32,14 +32,15 @@ KD-22 Iluminated Non-Locking Switches 10-Pack (12 Euro)
 
 
 8 Pieces M3 Bolts (+-8 mm)
-220Ohm Resistor
+220 Ohm Resistor
 
 M3 Washers (To mount 7 Segment display) - May not be needed depending on M3 screw size
 
 3D Printed Parts 
 
-Total Cost of the Project (only the needed amount) - 34 Euro
-Total Cost of the Project (Full Cost) - 67 Euro
+***Total Cost of the Project (Required Components Only) - 34 Euro***
+
+***Total Cost of the Project (Full Cost) - 67 Euro***
 
 
 
