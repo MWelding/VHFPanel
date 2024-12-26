@@ -14,7 +14,13 @@ Welcome to the VHF Panel project repository! This is my first venture into the w
 - **Side mounted digital encoder** - used as a trim
 
 ## Materials Used
+Arduino Mega R3 (25 Euro)
 [https://www.amazon.de/-/en/dp/B09F9VJBZX?_encoding=UTF8&psc=1](https://www.amazon.de/-/en/dp/B09F9VJBZX?_encoding=UTF8&psc=1)
+7 Segment Display 3-Pack (10 Euro)
+[https://www.amazon.de/-/en/AZDelivery-MAX7219-TM1637-Compatible-Raspberry/dp/B07Z7RHD2J](https://www.amazon.de/-/en/AZDelivery-MAX7219-TM1637-Compatible-Raspberry/dp/B07Z7RHD2J)
+Rotary Encoders
+[https://www.amazon.de/-/en/KY-040-Encoder-Automotive-Electronics-Multimedia/dp/B09726Y8RB](https://www.amazon.de/-/en/KY-040-Encoder-Automotive-Electronics-Multimedia/dp/B09726Y8RB)
+Push Button
 
 ## 3D Printed Housing
 I designed the enclosure to be easily 3D printen on my Ender 3. The STL's folder contains three files - the main enclosure, top panel and an optional trim rotary encoder knob.
