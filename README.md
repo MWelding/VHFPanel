@@ -35,8 +35,8 @@ A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** 
 - **M3 Washers:** May not be necessary depending on M3 screw size
 - **3D Printed Parts**
 
-**Total Project Cost (Essential Components Only): 34 Euro**  
-**Total Project Cost (Full Build): 67 Euro**
+**Total Project Cost (Only using quantity of components required): 34 Euro**  
+**Total Project Cost (Total Cost for all components): 67 Euro**
 
 
 ## 🖨️ 3D Printed Housing
