@@ -79,6 +79,10 @@ The KD-22 switch wiring can be tedious and the guides I found online were hard t
 
 Mobiflight setup is rather simple. Load the Arduino Mobiflight Module Config first, then the .MCC file. The .MCC configuration file has been made for MSFS 2020; different bindings may be needed for use on other Simulators. 
 
+First Load the Module Config:   [Mobiflight Arduino Mega Module Config](https://github.com/MWelding/VHFPanel/blob/main/Arduino%20mega%20Mobiflight%20Module%20Config.mfmc)
+
+
+Secondly Load the Bindings Config: [Mobiflght VHF Panel Configuration File for MSFS 2020](https://github.com/MWelding/VHFPanel/blob/main/VHF%20Panel%20MB%20Config.mcc)
 
 
 
