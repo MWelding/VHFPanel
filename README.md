@@ -58,7 +58,11 @@ Achieving the perfect fit for the rotary encoder might require some fine-tuning.
 ## ⚡ Electronics
 Most components, such as the **7-segment display** and **rotary encoders**, can be directly connected using their respective PCB pins. However, the **KD-22 switch** and **momentary switch** will require some soldering to function properly.
 
+
 Below is a user-friendly wiring diagram showing the components laid out as if viewed from behind (inside the case).
+
+
+<img src="images/wiring diagram.png" alt="Enclosure" width="800" height="800">
 
 ### 📌 Notes:
 - The connections to the **KD-22 switch** are exposed; ensure you use **heat-shrink tubing** or **electrical tape** to insulate them.
