@@ -43,7 +43,7 @@ A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** 
 - **Total Project Cost (Total Cost for all components): 67 Euro**
 
 
-## 🖨️ 3D Printed Housing  
+## 🖨️ 3D Printed Enclosure & Panel
 
 The enclosure is thoughtfully designed for easy 3D printing on an **Ender 3** printer. The **STL folder** includes three essential files:  
 
@@ -58,6 +58,20 @@ The enclosure is thoughtfully designed for easy 3D printing on an **Ender 3** pr
 </div>
 
 Achieving the perfect fit for the rotary encoder might require some fine-tuning. We recommend adjusting the **print size by 1-2%** up or down and testing multiple versions to ensure an optimal fit.
+
+## White Lettering
+
+The white letterning above the buttons and rotary encoder are made using silicone sealant. This results in crisp letters while not having the need to use an expensive multi-color 3D printer.
+
+<img src="images/White Lettering.jpeg" alt="Rotary Knob" width="300" height="300">
+
+**Here is the Process**
+
+1. Remove any stringing from the insides of the extruded lettering
+2. Fill with white silicone sealant
+3. Whipe off the excess using a wet rag or towel
+4. Wait untill dried (5-6hr)
+5. Use your finger or another (dry) rag to smear off the sealant that remained on the surface
 
 
 ## ⚡ Electronics  
