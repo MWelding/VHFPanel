@@ -1,9 +1,13 @@
 # 📡 VHF Panel
-A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** with an **Arduino Mega** and **Mobilfight**. It utilizes common, easily accessible components and is wired with **Dupont connectors** for straightforward assembly.
+
+A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** with an **Arduino Mega** and **Mobiflight**. It utilizes common, easily accessible components and is wired with **Dupont connectors** for straightforward assembly.
 
 ![VHF Panel Image](images/main.jpeg)
 
+
+
 ## ⚙️ Features  
+
 - **Displays standby frequency on an 8-digit 7-segment display**
 - **Single rotary encoder knob:** (Supports both single and double encoders)
   - Integrated button allows switching between large and small frequency increments
@@ -11,9 +15,8 @@ A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** 
 - **Frequency toggle button:** Quickly switch between active COM1 and standby frequencies
 - **Side-mounted digital encoder:** Designed for use as a trim control
 
----
 
-## 🛠️ Materials Used
+## 🛠️ Materials Used  
 
 - **Arduino Mega R3 (25 Euro)**  
   [Available on Amazon](https://www.amazon.de/-/en/dp/B09F9VJBZX?_encoding=UTF8&psc=1)
@@ -35,12 +38,15 @@ A simple and efficient **VHF Panel** designed for use on the **VATSIM Network** 
 - **M3 Washers:** May not be necessary depending on M3 screw size
 - **3D Printed Parts**
 
-**Total Project Cost (Only using quantity of components required): 34 Euro**  
-**Total Project Cost (Total Cost for all components): 67 Euro**
+### Total Costs  
+- **Total Project Cost (Only using quantity of components required): 34 Euro**  
+- **Total Project Cost (Total Cost for all components): 67 Euro**
 
 
-## 🖨️ 3D Printed Housing
-The enclosure is thoughtfully designed for easy 3D printing on an **Ender 3** printer. The **STL folder** includes three essential files:
+## 🖨️ 3D Printed Housing  
+
+The enclosure is thoughtfully designed for easy 3D printing on an **Ender 3** printer. The **STL folder** includes three essential files:  
+
 - **Main enclosure**
 - **Top panel**
 - **Optional rotary encoder knob**
@@ -54,35 +60,38 @@ The enclosure is thoughtfully designed for easy 3D printing on an **Ender 3** pr
 Achieving the perfect fit for the rotary encoder might require some fine-tuning. We recommend adjusting the **print size by 1-2%** up or down and testing multiple versions to ensure an optimal fit.
 
 
+## ⚡ Electronics  
 
-## ⚡ Electronics
 Most components, such as the **7-segment display** and **rotary encoders**, can be directly connected using their respective PCB pins. However, the **KD-22 switch** and **momentary switch** will require some soldering to function properly.
 
+Below is the wiring diagram I created. It's my first time, so apologies if some of the correct conventions aren't followed - please provide feedback to improve this.
 
-Below is a wiring diagram I created. It's my first time, so apologies if some of the correct conventions aren't followed - please provide feedback so we can improve this.
+<img src="images/wiring diagram.png" alt="Wiring Diagram" width="600" height="600">
 
+The KD-22 switch wiring can be tedious, and the guides I found online were hard to understand. Below is an image of the best one I could find. What I did in my design is bridge the common and LED `-` pins and have the `+` for the LED and switch on two separate pins.
 
-<img src="images/wiring diagram.png" alt="" width="600" height="600">
+<img src="images/kd22diagram.jpg" alt="KD-22 Diagram" width="600" height="600">
 
-The KD-22 switch wiring can be tedious and the guides I found online were hard to understand. Below is an image of the best one I could find. What I did in my design is bridge the common and Led - pins, and have the + for the LED and switch on two seperate pins.
+### 📌 Notes  
 
-
-<img src="images/kd22diagram.jpg" alt="" width="600" height="600">
-
-### 📌 Notes:
 - The connections to the **KD-22 switch** are exposed; ensure you use **heat-shrink tubing** or **electrical tape** to insulate them.
-- The **Arduino Mega** (at least the model used here) doesn't have enough **VCC** or **GND** pins for every component. Daisy chaining with Dupont connectors isn't ideal. A simple solution is to create **Y-splitters**
+- The **Arduino Mega** (at least the model used here) doesn't have enough **VCC** or **GND** pins for every component. Daisy chaining with Dupont connectors isn't ideal. A simple solution is to create **Y-splitters**.
 
 
+## ⚙️ Mobiflight Setup  
 
-## ⚙️ Mobiflight Setup
+Mobiflight setup is straightforward:  
 
-Mobiflight setup is rather simple. Load the Arduino Mobiflight Module Config first, then the .MCC file. The .MCC configuration file has been made for MSFS 2020; different bindings may be needed for use on other Simulators. 
+1. **Load the Arduino Mobiflight Module Config** first.  
+2. Then load the **.MCC file**.  
 
-First Load the Module Config:   [Mobiflight Arduino Mega Module Config](https://github.com/MWelding/VHFPanel/blob/main/Arduino%20mega%20Mobiflight%20Module%20Config.mfmc)
+The **.MCC configuration file** is optimized for MSFS 2020. Different bindings may be needed for other simulators.  
+
+- [Mobiflight Arduino Mega Module Config](https://github.com/MWelding/VHFPanel/blob/main/Arduino%20mega%20Mobiflight%20Module%20Config.mfmc)  
+- [Mobiflight VHF Panel Configuration File for MSFS 2020](https://github.com/MWelding/VHFPanel/blob/main/VHF%20Panel%20MB%20Config.mcc)
 
 
-Secondly Load the Bindings Config: [Mobiflght VHF Panel Configuration File for MSFS 2020](https://github.com/MWelding/VHFPanel/blob/main/VHF%20Panel%20MB%20Config.mcc)
+## Thank You!
 
-
-
+Thank you for taking the time to review my project. This is my first electronics project, and I’ve tried to ensure every detail is covered. Any feedback or suggestions for improvement would be greatly appreciated!
+ 
