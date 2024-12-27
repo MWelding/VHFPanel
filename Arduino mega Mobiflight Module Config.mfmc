@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleType>MobiFlight Mega</ModuleType>
+  <ModuleName>MobiFlight Mega</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="LedModule" ModelType="0" DinPin="9" ClsPin="10" ClkPin="11" Brightness="15" NumModules="8" />
+  <Encoder Name="Encoder" PinLeft="7" PinRight="5" EncoderType="0" />
+  <Button Name="Button" Pin="6" />
+  <Button Name="freq switch" Pin="2" />
+  <Button Name="ledButton" Pin="4" />
+  <Output Name="ButtonLedLed" Pin="12" />
+  <Encoder Name="trimencoder" PinLeft="55" PinRight="56" EncoderType="0" />
+  <Button Name="trmencoderbutton" Pin="54" />
+</Config>

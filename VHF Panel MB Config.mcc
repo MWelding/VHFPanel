@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="2bbbd51e-72f1-4183-a7bf-9fa237827702">
+      <active>true</active>
+      <description>STANBY FREQUENCY</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,KHz)" UUID="0c6afa60-4a6e-405d-91a5-1d7ba95bfe11" />
+        <test type="Float" value="123456" />
+        <modifiers />
+        <display type="Display Module" serial="MobiFlight Mega/ SN-7F0-2F8" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="2,3,4,5,6,7" ledDecimalPoints="5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a1d33189-93ce-411a-96a6-1c72aee0b145">
+      <active>true</active>
+      <description>GEN PUSH LED</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:BRAKE PARKING INDICATOR,Bool)" UUID="0cf15a1c-712f-4bf2-bd16-eb4e6b103e20" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="Output" serial="MobiFlight Mega/ SN-7F0-2F8" trigger="normal" pin="ButtonLedLed" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="670b2c5a-5a91-43df-af67-28b13c1800bc">
+      <active>true</active>
+      <description>FREQ SEL BG INCRMNT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_DEC)" presetId="fed7b270-7feb-40c7-a125-448aa4ebe638" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_WHOLE_INC)" presetId="4656c614-ca12-4e78-83b3-e24aefb32356" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="freq switcher" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63eb70d8-db50-4975-9505-b4a732745069">
+      <active>true</active>
+      <description>FREQ SEL SW (CHNG BETWEEN SMALL AND BIG INCRMNTS)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="Button" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="freq switcher" varExpression="($+1)%2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28cea442-8ac7-490c-affc-1eb6fde6ef68">
+      <active>true</active>
+      <description>FREQ SEL SM INCRMNT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_DEC)" presetId="04725cc3-7346-4f5d-ad89-c1ffaaa6e978" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:COM_RADIO_FRACT_INC)" presetId="6b78a3e2-e3dc-411b-bb2d-224b011a2644" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="variable" active="true" ref="freq switcher" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f2f0ca7b-0d44-4f41-8562-ab62f45a5b70">
+      <active>true</active>
+      <description>STANDBY AND COM1 SWTCH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="freq switch" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:COM_STBY_RADIO_SWAP)" presetId="f4321b1a-2b1b-48ef-b9eb-75f4ffd762ac" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1e749ad-1873-49fc-9f8c-6cb13784934d">
+      <active>true</active>
+      <description>GEN PUSH BTN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="ledButton" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:PARKING_BRAKES)" presetId="c1cb32b4-fd35-41ab-8ff7-c407bd407998" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="46376487-35a0-4dd0-8be1-b2079a98ae00">
+      <active>true</active>
+      <description>SIDE TRIM ENCODER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.4.0.0, Culture=neutral, PublicKeyToken=null" serial="MobiFlight Mega/ SN-7F0-2F8" name="trimencoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:ELEV_TRIM_UP)" presetId="adc21a38-0671-481d-aa80-233c7ca33823" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:ELEV_TRIM_DN)" presetId="44cf55ab-06f6-4e7d-83e6-6144f713da5c" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
