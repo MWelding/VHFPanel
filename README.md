@@ -56,20 +56,19 @@ Achieving the perfect fit for the rotary encoder might require some fine-tuning.
 
 
 ## ⚡ Electronics
+Most components, such as the **7-segment display** and **rotary encoders**, can be directly connected using their respective PCB pins. However, the **KD-22 switch** and **momentary switch** will require some soldering to function properly.
 
-Most components (the 7-segment display, rotary encoders) can be directly connected using the pins on the PCB's. However, the KD-22 swtich and momentary switch will require some soldering to get working properly. 
+Below is a user-friendly wiring diagram showing the components laid out as if viewed from behind (inside the case).
 
-Below is a user-friendly wiring diagram whish shows the components layed out as if viewing the panel from behind (inside the case).
-
-
-
-
-### NOTES: 
-- The connections to the KD-22 switch turn out bare; ensure you use heat-shrink tubing or some tape to insulate them.
-- The Arduino Mega (at least the one I used), doesn't have enough VCC or GND pins for every component to have a connection. Daisy chaining using dupont connectors isn't great, either. I simply created some Y splitters to solve the problem.
+### 📌 Notes:
+- The connections to the **KD-22 switch** are exposed; ensure you use **heat-shrink tubing** or **electrical tape** to insulate them.
+- The **Arduino Mega** (at least the model used here) doesn't have enough **VCC** or **GND** pins for every component. Daisy chaining with Dupont connectors isn't ideal. A simple solution is to create **Y-splitters** for better connectivity.
 
 
-## Mobiflight Setup
+
+## ⚙️ Mobiflight Setup
+*This section is currently under development. Stay tuned for updates!*
+
 
 
 
