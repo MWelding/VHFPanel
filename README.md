@@ -48,9 +48,9 @@ M3 Washers (To mount 7 Segment display) - May not be needed depending on M3 scre
 I designed the enclosure to be easily 3D printen on my Ender 3. The STL's folder contains three files - the main enclosure, top panel and an optional trim rotary encoder knob.
 
 <div style="display: flex; justify-content: center;">
-  <img src="images/image.png" alt="Description" width="400" height="400">
-  <img src="images/Top panel.png" alt="Description" width="400" height="400">
-  <img src="images/Top panel.png" alt="Description" width="400" height="400">
+  <img src="images/Enclosure.png" alt="Description" width="380" height="380">
+  <img src="images/Top panel.png" alt="Description" width="380" height="380">
+  <img src="images/knob.png" alt="Description" width="380" height="380">
 </div>
 
 
