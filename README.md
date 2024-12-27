@@ -62,21 +62,22 @@ Most components, such as the **7-segment display** and **rotary encoders**, can 
 Below is a wiring diagram I created. It's my first time, so apologies if some of the correct conventions aren't followed - please provide feedback so we can improve this.
 
 
-<img src="images/kd22diagram.jpeg" alt="" width="800" height="800">
+<img src="images/wiring diagram.png" alt="" width="600" height="600">
 
-The KD-22 switch wiring can be tedious and the guides I found online were hard to understand. Below is an image of the best one I could find.
+The KD-22 switch wiring can be tedious and the guides I found online were hard to understand. Below is an image of the best one I could find. What I did in my design is bridge the common and Led - pins, and have the + for the LED and switch on two seperate pins.
 
 
-<img src="images/wiring diagram.png" alt="" width="800" height="800">
+<img src="images/kd22diagram.jpg" alt="" width="600" height="600">
 
 ### 📌 Notes:
 - The connections to the **KD-22 switch** are exposed; ensure you use **heat-shrink tubing** or **electrical tape** to insulate them.
-- The **Arduino Mega** (at least the model used here) doesn't have enough **VCC** or **GND** pins for every component. Daisy chaining with Dupont connectors isn't ideal. A simple solution is to create **Y-splitters** for better connectivity.
+- The **Arduino Mega** (at least the model used here) doesn't have enough **VCC** or **GND** pins for every component. Daisy chaining with Dupont connectors isn't ideal. A simple solution is to create **Y-splitters**
 
 
 
 ## ⚙️ Mobiflight Setup
-*This section is currently under development. Stay tuned for updates!*
+
+Mobiflight setup is rather simple. Load the Arduino Mobiflight Module Config first, then the .MCC file. The .MCC configuration file has been made for MSFS 2020; different bindings may be needed for use on other Simulators. 
 
 
 
